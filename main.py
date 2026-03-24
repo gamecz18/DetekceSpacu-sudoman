@@ -58,7 +58,7 @@ def processFaceEye(frame, gray, state, faceCascade, eyeCascade):
             pocetBdelich -= 1
 
 
-    cv2.putText(frame, "Pocet bdelich: " + str(pocetBdelich), (100, 600), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0, 0, 255), 3)
+    cv2.putText(frame, "Pocet bdelych: " + str(pocetBdelich), (100, 600), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0, 0, 255), 3)
     return frame, state
 
 
@@ -93,5 +93,5 @@ def main(videoPath="video.mp4"):
 
 if __name__ == '__main__':
     print("Starting the program...")
-    """main(0)  # Pro webkameru """
+   # main(0)  # Pro webkameru
     main("video4.mp4")
